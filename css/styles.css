@@ -550,3 +550,34 @@ img {
   background: var(--ocean);
   border-radius: 2px;
 }
+.modal-container {
+  position: relative;
+}
+.modal {
+  position: absolute;
+  top: 13px;
+  bottom: 13px;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 200;
+  display: none;
+  background-color: hsla(0, 88%, 53%, 0.753);
+}
+.modal-container::after .modal {
+  display: block;
+  overflow: visible;
+}
+.modal-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-top: 32px;
+  margin-left: 360px;
+  color: yellow;
+}
+
+.is-hidden:hover {
+  visibility: visible;
+}
