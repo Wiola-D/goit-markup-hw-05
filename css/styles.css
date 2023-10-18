@@ -562,7 +562,6 @@ img {
   justify-content: center;
   overflow: hidden;
   z-index: 200;
-  display: none;
   background-color: hsla(0, 88%, 53%, 0.753);
 }
 .modal-container::after .modal {
@@ -577,7 +576,5 @@ img {
   margin-left: 360px;
   color: yellow;
 }
-
-.is-hidden:hover {
-  visibility: visible;
+.is-hidden {
 }
