@@ -620,3 +620,23 @@ img {
   border: none;
   fill: #ffffff;
 }
+
+.modal-bg {
+  transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  animation-name: scal;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: alternate;
+  animation-iteration-count: 1;
+}
+@keyframes scal {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 4;
+  }
+}
